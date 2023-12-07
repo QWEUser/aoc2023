@@ -6,8 +6,8 @@ fileInput.addEventListener("change", function (e) {
 
   reader.onload = function (e) {
     let resultText = reader.result;
-    let resultArray = resultText.replace(/\r/g, "").split("\n");
-    console.log(resultArray);
+    let inputArray = resultText.replace(/\r/g, "").split("\n");
+    console.log(inputArray);
   };
   reader.readAsText(file);
 });
